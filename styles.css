@@ -671,10 +671,6 @@ p {
   color: var(--text);
 }
 
-.page-legal .site-header {
-  padding-top: 0.75rem;
-}
-
 .legal-main {
   padding: 4.2rem 0 2.6rem;
 }

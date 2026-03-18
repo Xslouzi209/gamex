@@ -1,3 +1,4 @@
+// ── Mobile nav toggle ──
 const navToggle = document.querySelector(".nav-toggle");
 const navShell = document.querySelector(".nav-shell");
 
@@ -15,6 +16,18 @@ if (navToggle && navShell) {
   });
 }
 
+// ── Header scroll effect ──
+const header = document.querySelector(".site-header");
+
+if (header) {
+  const onScroll = () => {
+    header.classList.toggle("scrolled", window.scrollY > 40);
+  };
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+}
+
+// ── Scroll reveal ──
 const revealItems = document.querySelectorAll("[data-reveal]");
 
 if ("IntersectionObserver" in window && revealItems.length > 0) {
@@ -28,8 +41,8 @@ if ("IntersectionObserver" in window && revealItems.length > 0) {
       });
     },
     {
-      rootMargin: "0px 0px -10% 0px",
-      threshold: 0.12,
+      rootMargin: "0px 0px -8% 0px",
+      threshold: 0.1,
     }
   );
 

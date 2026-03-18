@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gamex | A premium gaming tracker for Android</title>
   <meta name="description" content="Download Gamex and upgrade your gaming library with ratings, reviews, playtime tracking, stats, and a premium profile experience on Android.">
-  <meta name="theme-color" content="#07111f">
+  <meta name="theme-color" content="#08080f">
   <meta name="robots" content="index,follow">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Gamex | A premium gaming tracker for Android">
@@ -19,14 +19,12 @@
   <meta name="twitter:description" content="The Android app for players who want a better way to organize their library, reviews, hours, and profile.">
   <meta name="twitter:image" content="https://gamexapp.com/app_icon.png">
   <link rel="canonical" href="https://gamexapp.com/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="app_icon.png">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="page-home">
+<body>
   <a class="skip-link" href="#content">Skip to content</a>
+  <div class="bg-orbs" aria-hidden="true"></div>
 
   <header class="site-header">
     <div class="container top-nav">
@@ -56,167 +54,181 @@
   </header>
 
   <main id="content">
-    <section class="hero-section" id="home">
-      <div class="hero-backdrop" aria-hidden="true"></div>
-      <div class="container hero-layout">
-        <div class="hero-copy" data-reveal>
+
+    <!-- ── HERO ── -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content" data-reveal>
           <p class="eyebrow">Now available on Google Play</p>
           <h1>Your gaming world, organized with a premium feel.</h1>
           <p class="hero-text">
             Gamex turns your personal game library into a polished experience. Track what you play,
             rate every title, write reviews, log your hours, and build a profile that actually reflects your journey.
           </p>
-
           <div class="hero-actions">
             <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.slouzilabs.gametracker&amp;pcampaignid=web_share" target="_blank" rel="noreferrer">Download on Google Play</a>
             <a class="btn btn-secondary" href="#screenshots">View screenshots</a>
           </div>
-
-          <div class="hero-proof" aria-label="Key features">
+          <div class="hero-tags" aria-label="Key features">
             <span>Personal library</span>
             <span>Ratings and reviews</span>
             <span>Stats and playtime</span>
           </div>
         </div>
 
-        <div class="hero-visual" data-reveal>
-          <div class="visual-orbit visual-orbit-a" aria-hidden="true"></div>
-          <div class="visual-orbit visual-orbit-b" aria-hidden="true"></div>
+        <div class="hero-phone" data-reveal>
+          <div class="phone-glow-ring" aria-hidden="true"></div>
+          <div class="phone-frame">
+            <img src="screenshoots/Gamex_home.png" alt="Gamex home screen showing recent activity and quick access to the library">
+          </div>
+          <div class="phone-float-card phone-float-top">
+            <strong>A profile with identity</strong>
+            <span>Favorites, activity, and reviews presented in one clean space.</span>
+          </div>
+          <div class="phone-float-card phone-float-bottom">
+            <strong>Everything in control</strong>
+            <span>Track hours, organize your backlog, and review your progress at a glance.</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="phone-stage">
-            <div class="phone-card phone-card-main">
-              <img src="screenshoots/Gamex_home.png" alt="Gamex home screen showing recent activity and quick access to the library">
+    <!-- ── SIGNAL STRIP ── -->
+    <section class="signal-strip">
+      <div class="container">
+        <div class="signal-row" data-reveal>
+          <div class="signal-item">
+            <p class="signal-value">Android ready</p>
+            <p class="signal-label">Available to download right now.</p>
+          </div>
+          <div class="signal-item">
+            <p class="signal-value">Your library</p>
+            <p class="signal-label">No messy notes, no scattered lists, no chaos.</p>
+          </div>
+          <div class="signal-item">
+            <p class="signal-value">Premium look</p>
+            <p class="signal-label">Designed to feel worth opening every day.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FEATURES ── -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="features-header" data-reveal>
+          <p class="eyebrow">Core features</p>
+          <h2>The app that brings order and presence to your gaming life.</h2>
+          <p class="section-copy">
+            Gamex is built around what really matters: keeping your history together, giving context to what you play,
+            and turning your collection into something that feels curated instead of forgotten.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-item" data-reveal data-reveal-delay="1">
+            <span class="feature-num">01</span>
+            <h3>Personal library</h3>
+            <p>Keep your games in one refined space that is always easy to browse and revisit.</p>
+          </div>
+          <div class="feature-item" data-reveal data-reveal-delay="2">
+            <span class="feature-num">02</span>
+            <h3>Ratings and reviews</h3>
+            <p>Save your opinion on every title with a presentation that feels thoughtful and personal.</p>
+          </div>
+          <div class="feature-item" data-reveal data-reveal-delay="3">
+            <span class="feature-num">03</span>
+            <h3>Playtime tracking</h3>
+            <p>Measure your time to understand what you play most, what you finish, and what stays in your backlog.</p>
+          </div>
+          <div class="feature-item" data-reveal data-reveal-delay="4">
+            <span class="feature-num">04</span>
+            <h3>Public profile</h3>
+            <p>Show your gaming taste with favorites, activity, and reviews in an elegant public view.</p>
+          </div>
+          <div class="feature-item" data-reveal data-reveal-delay="5">
+            <span class="feature-num">05</span>
+            <h3>Meaningful progress</h3>
+            <p>Turn each session into visible progress and each game into part of a real personal timeline.</p>
+          </div>
+          <div class="feature-item" data-reveal data-reveal-delay="6">
+            <span class="feature-num">06</span>
+            <h3>Focused experience</h3>
+            <p>An interface built around your games, not around heavy menus or unnecessary steps.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SCREENSHOTS ── -->
+    <section class="showcase-section" id="screenshots">
+      <div class="container">
+        <div class="showcase-header" data-reveal>
+          <p class="eyebrow">Real screens</p>
+          <h2>An interface that feels as good as it looks.</h2>
+          <p class="section-copy">
+            Every screen is shaped around one goal: making it fast and satisfying to log, review, and revisit your gaming activity.
+          </p>
+        </div>
+
+        <div class="phone-gallery" data-reveal>
+          <div class="phone-preview">
+            <div class="phone-preview-frame">
+              <img src="screenshoots/Gamex_home.png" alt="Gamex home screen">
             </div>
-            <div class="floating-note floating-note-top">
-              <strong>A profile with identity</strong>
-              <span>Favorites, activity, and reviews presented in one clean space.</span>
+            <div class="phone-preview-label">
+              <h3>Home</h3>
+              <p>Your activity, instantly visible</p>
             </div>
-            <div class="floating-note floating-note-bottom">
-              <strong>Everything in control</strong>
-              <span>Track hours, organize your backlog, and review your progress at a glance.</span>
+          </div>
+
+          <div class="phone-preview">
+            <div class="phone-preview-frame">
+              <img src="screenshoots/Gamex_library.png" alt="Gamex library screen" loading="lazy">
+            </div>
+            <div class="phone-preview-label">
+              <h3>Library</h3>
+              <p>A refined collection view</p>
+            </div>
+          </div>
+
+          <div class="phone-preview">
+            <div class="phone-preview-frame">
+              <img src="screenshoots/Gamex_screen_details_2.png" alt="Game details screen in Gamex" loading="lazy">
+            </div>
+            <div class="phone-preview-label">
+              <h3>Details</h3>
+              <p>Info, ratings, and tracking</p>
+            </div>
+          </div>
+
+          <div class="phone-preview">
+            <div class="phone-preview-frame">
+              <img src="screenshoots/Gamex_screen_reviews.png" alt="Reviews screen in Gamex" loading="lazy">
+            </div>
+            <div class="phone-preview-label">
+              <h3>Reviews</h3>
+              <p>Personal, not generic</p>
+            </div>
+          </div>
+
+          <div class="phone-preview">
+            <div class="phone-preview-frame">
+              <img src="screenshoots/Gamex_screen_public_profile.png" alt="Public profile screen in Gamex" loading="lazy">
+            </div>
+            <div class="phone-preview-label">
+              <h3>Profile</h3>
+              <p>Polished and memorable</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="signal-strip">
-      <div class="container signal-grid" data-reveal>
-        <article class="signal-card">
-          <p class="signal-value">Android ready</p>
-          <p class="signal-label">Available to download right now.</p>
-        </article>
-        <article class="signal-card">
-          <p class="signal-value">Your library</p>
-          <p class="signal-label">No messy notes, no scattered lists, no chaos.</p>
-        </article>
-        <article class="signal-card">
-          <p class="signal-value">Premium look</p>
-          <p class="signal-label">Designed to feel worth opening every day.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section-block" id="features">
-      <div class="container section-head" data-reveal>
-        <p class="eyebrow">Core features</p>
-        <h2>The app that brings order and presence to your gaming life.</h2>
-        <p class="section-copy">
-          Gamex is built around what really matters: keeping your history together, giving context to what you play,
-          and turning your collection into something that feels curated instead of forgotten.
-        </p>
-      </div>
-
-      <div class="container feature-grid premium-grid">
-        <article class="feature-card" data-reveal>
-          <span class="feature-icon">01</span>
-          <h3>Personal library</h3>
-          <p>Keep your games in one refined space that is always easy to browse and revisit.</p>
-        </article>
-        <article class="feature-card" data-reveal>
-          <span class="feature-icon">02</span>
-          <h3>Ratings and reviews</h3>
-          <p>Save your opinion on every title with a presentation that feels thoughtful and personal.</p>
-        </article>
-        <article class="feature-card" data-reveal>
-          <span class="feature-icon">03</span>
-          <h3>Playtime tracking</h3>
-          <p>Measure your time to understand what you play most, what you finish, and what stays in your backlog.</p>
-        </article>
-        <article class="feature-card" data-reveal>
-          <span class="feature-icon">04</span>
-          <h3>Public profile</h3>
-          <p>Show your gaming taste with favorites, activity, and reviews in an elegant public view.</p>
-        </article>
-        <article class="feature-card" data-reveal>
-          <span class="feature-icon">05</span>
-          <h3>Meaningful progress</h3>
-          <p>Turn each session into visible progress and each game into part of a real personal timeline.</p>
-        </article>
-        <article class="feature-card" data-reveal>
-          <span class="feature-icon">06</span>
-          <h3>Focused experience</h3>
-          <p>An interface built around your games, not around heavy menus or unnecessary steps.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section-block showcase-section" id="screenshots">
-      <div class="container section-head" data-reveal>
-        <p class="eyebrow">Real screens</p>
-        <h2>An interface that feels as good as it looks.</h2>
-        <p class="section-copy">
-          Every screen is shaped around one goal: making it fast and satisfying to log, review, and revisit your gaming activity.
-        </p>
-      </div>
-
-      <div class="container showcase-grid">
-        <article class="showcase-card showcase-card-featured" data-reveal>
-          <div class="showcase-copy">
-            <p class="eyebrow">Home</p>
-            <h3>Your activity, instantly visible</h3>
-            <p>Open the app and see what matters first: recent updates, fast access points, and the feeling that everything is in place.</p>
-          </div>
-          <img src="screenshoots/Gamex_home.png" alt="Gamex home screen" class="showcase-image">
-        </article>
-
-        <article class="showcase-card" data-reveal>
-          <img src="screenshoots/Gamex_library.png" alt="Gamex library screen" class="showcase-image" loading="lazy">
-          <div class="showcase-copy">
-            <h3>A refined library</h3>
-            <p>Organize your collection in a clear, elegant view that is ready to grow with you.</p>
-          </div>
-        </article>
-
-        <article class="showcase-card" data-reveal>
-          <img src="screenshoots/Gamex_screen_details_2.png" alt="Game details screen in Gamex" class="showcase-image" loading="lazy">
-          <div class="showcase-copy">
-            <h3>Details that matter</h3>
-            <p>See information, status, ratings, and tracking options without breaking the flow.</p>
-          </div>
-        </article>
-
-        <article class="showcase-card" data-reveal>
-          <img src="screenshoots/Gamex_screen_reviews.png" alt="Reviews screen in Gamex" class="showcase-image" loading="lazy">
-          <div class="showcase-copy">
-            <h3>Reviews with personality</h3>
-            <p>Keep your opinion attached to every game so your history feels personal, not generic.</p>
-          </div>
-        </article>
-
-        <article class="showcase-card" data-reveal>
-          <img src="screenshoots/Gamex_screen_public_profile.png" alt="Public profile screen in Gamex" class="showcase-image" loading="lazy">
-          <div class="showcase-copy">
-            <h3>A profile that feels premium</h3>
-            <p>Show favorites, activity, and taste in a layout that feels polished and memorable.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section-block" id="experience">
-      <div class="container experience-layout">
-        <div class="experience-copy" data-reveal>
+    <!-- ── EXPERIENCE ── -->
+    <section class="experience-section" id="experience">
+      <div class="container experience-grid">
+        <div class="experience-intro" data-reveal>
           <p class="eyebrow">Built to persuade</p>
           <h2>Less noise. More identity. More reasons to keep coming back.</h2>
           <p class="section-copy">
@@ -226,66 +238,73 @@
         </div>
 
         <div class="experience-list">
-          <article class="experience-item" data-reveal>
+          <div class="experience-item" data-reveal data-reveal-delay="1">
             <h3>Track without friction</h3>
             <p>Add games, rate them, and update your profile through a clear and efficient flow.</p>
-          </article>
-          <article class="experience-item" data-reveal>
+          </div>
+          <div class="experience-item" data-reveal data-reveal-delay="2">
             <h3>Rediscover your history</h3>
             <p>Seeing your hours, ratings, and favorites together makes every session feel more meaningful.</p>
-          </article>
-          <article class="experience-item" data-reveal>
+          </div>
+          <div class="experience-item" data-reveal data-reveal-delay="3">
             <h3>Present your taste better</h3>
             <p>Your profile communicates more than data. It feels curated, consistent, and worth showing.</p>
-          </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section-block cta-section">
-      <div class="container cta-panel" data-reveal>
-        <div>
-          <p class="eyebrow">Download now</p>
-          <h2>Start building a gaming library that actually feels worth revisiting.</h2>
-          <p class="section-copy">Install Gamex on Android and turn your games, reviews, and hours into a premium everyday experience.</p>
-        </div>
-        <div class="cta-actions">
-          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.slouzilabs.gametracker&amp;pcampaignid=web_share" target="_blank" rel="noreferrer">Open Google Play</a>
-          <a class="btn btn-secondary" href="#legal">Read legal information</a>
+    <!-- ── CTA ── -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-panel" data-reveal>
+          <div class="cta-content">
+            <p class="eyebrow">Download now</p>
+            <h2>Start building a gaming library that actually feels worth revisiting.</h2>
+            <p class="section-copy">Install Gamex on Android and turn your games, reviews, and hours into a premium everyday experience.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.slouzilabs.gametracker&amp;pcampaignid=web_share" target="_blank" rel="noreferrer">Open Google Play</a>
+            <a class="btn btn-secondary" href="#legal">Read legal information</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section-block legal-section" id="legal">
-      <div class="container section-head" data-reveal>
-        <p class="eyebrow">Legal and support</p>
-        <h2>Clear information for users, stores, and verification reviews.</h2>
-        <p class="section-copy">Everything essential is available in a clear, direct format for trust, support, and publishing compliance.</p>
-      </div>
+    <!-- ── LEGAL ── -->
+    <section class="legal-section" id="legal">
+      <div class="container">
+        <div class="legal-header" data-reveal>
+          <p class="eyebrow">Legal and support</p>
+          <h2>Clear information for users, stores, and verification reviews.</h2>
+          <p class="section-copy">Everything essential is available in a clear, direct format for trust, support, and publishing compliance.</p>
+        </div>
 
-      <div class="container legal-grid">
-        <article class="legal-card" data-reveal>
-          <h3>Privacy Policy</h3>
-          <p>Learn how account data, authentication, and personal library information are handled in Gamex.</p>
-          <a class="inline-link" href="privacy.html">Read policy</a>
-        </article>
-        <article class="legal-card" data-reveal>
-          <h3>Terms of Service</h3>
-          <p>Check the product rules, user responsibilities, and moderation standards that govern the service.</p>
-          <a class="inline-link" href="terms.html">Read terms</a>
-        </article>
-        <article class="legal-card" data-reveal>
-          <h3>Delete Account</h3>
-          <p>See how to remove an account from inside the app or request deletion through support.</p>
-          <a class="inline-link" href="delete-account.html">View guide</a>
-        </article>
-        <article class="legal-card" id="contact" data-reveal>
-          <h3>Contact</h3>
-          <p>For support, privacy, or legal questions, you can reach us directly by email.</p>
-          <a class="contact-chip" href="mailto:slouzilabs@gmail.com">slouzilabs@gmail.com</a>
-        </article>
+        <div class="legal-grid">
+          <div class="legal-card" data-reveal data-reveal-delay="1">
+            <h3>Privacy Policy</h3>
+            <p>Learn how account data, authentication, and personal library information are handled in Gamex.</p>
+            <a class="inline-link" href="privacy.html">Read policy</a>
+          </div>
+          <div class="legal-card" data-reveal data-reveal-delay="2">
+            <h3>Terms of Service</h3>
+            <p>Check the product rules, user responsibilities, and moderation standards that govern the service.</p>
+            <a class="inline-link" href="terms.html">Read terms</a>
+          </div>
+          <div class="legal-card" data-reveal data-reveal-delay="3">
+            <h3>Delete Account</h3>
+            <p>See how to remove an account from inside the app or request deletion through support.</p>
+            <a class="inline-link" href="delete-account.html">View guide</a>
+          </div>
+          <div class="legal-card" data-reveal data-reveal-delay="4" id="contact">
+            <h3>Contact</h3>
+            <p>For support, privacy, or legal questions, you can reach us directly by email.</p>
+            <a class="contact-chip" href="mailto:slouzilabs@gmail.com">slouzilabs@gmail.com</a>
+          </div>
+        </div>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
